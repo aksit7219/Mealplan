@@ -36,7 +36,7 @@ app.use("/uploads", express.static("uploads"));
 const run = async () => {
   await mongoose
     .connect(
-      "mongodb+srv://yjf246:k1ZKWobS0ecrgVr7@meals.gzqrl2d.mongodb.net/mealplan"
+      "mongodb+srv://yjf246:k1ZKWobS0ecrgVr7@meals.gzqrl2d.mongodb.net/test-mealplan"
     )
     .then(() => {
       console.log("Connected to MongoDB");
@@ -50,27 +50,7 @@ run();
 app.listen(4000);
 const planBundels = require("./models/planBundlesModel");
 
-// var count=0
-// async function addIngredients(data) {
-//   for (const item of data) {
-//     try {
-//       const res = await axios.post("http://localhost:4000/raw-ingredients", item);
-//       if (res.status==201) {
-//         console.log("Added:", item.name);
-//         count+=1;
-//       } else {
-//         console.log("Cancelled:", item.name);
-//         count-=1;
-//       }
-//     } catch (error) {
-//       console.error("Error adding ingredient:", item.name, error);
-//     }
-//   }
-//   console.log("------",count)
-// }
 
-// Call the function to run it
-// addIngredients(data);
 const isAuth = require("./middleware/isAuth");
 
 app.use(users_route);
