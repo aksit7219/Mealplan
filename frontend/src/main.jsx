@@ -6,7 +6,6 @@ import { ThemeProvider } from "@material-tailwind/react";
 import { MaterialTailwindControllerProvider } from "./context";
 import { Provider } from "react-redux";
 import store from "./redux/store";
-import "../public/css/tailwind.css";
 import {
   useQuery,
   useMutation,
@@ -14,7 +13,6 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
-
 
 // Create a client
 const queryClient = new QueryClient()
