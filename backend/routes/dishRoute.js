@@ -1,7 +1,7 @@
 const express = require("express");
 const Dish = require("../models/dishModel");
 const router = express.Router();
-const upload = require("../multerConfig");
+const upload = require("../config/multerConfig");
 
 router.post("/adddish", async (req, res) => {
   try {

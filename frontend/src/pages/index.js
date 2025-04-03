@@ -11,3 +11,5 @@ export * from "@/pages/delivery";
 export * from "@/pages/inventory";
 export * from "@/pages/salesNmarket";
 export * from "@/pages/ManageCoustomer";
+export * from "@/pages/mealplan";
+export * from "@/pages/items";

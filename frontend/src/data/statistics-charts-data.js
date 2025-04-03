@@ -1,4 +1,4 @@
-import { chartsConfig } from "@/configs";
+import { chartsConfig } from "@/config/index";
 
 const websiteViewsChart = {
   type: "bar",

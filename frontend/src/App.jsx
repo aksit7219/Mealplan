@@ -1,7 +1,7 @@
 import React, { useState, lazy, Suspense } from 'react';
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { Loader } from "./widgets/layout";
-import IsAuth from "./customHooks/isAuth";
+import IsAuth from "./hooks/isAuth";
 import MealPlanSingle from './pages/mealplanSingle';
 import MealPlanNew from './pages/mealPalanNew';
 import Test from './pages/test';
